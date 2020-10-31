@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import "../styles/App.css";
 
 class App extends Component {
@@ -28,7 +28,7 @@ class App extends Component {
   handleKey = (e) => {
     if (e.keyCode === 39) {
       this.setState({
-        ballPosition: { left: this.state.ballPosition.left + 5 + "px" }
+        ballPosition: { left: `${this.state.ballPosition + 5}px` }
       });
     }
   };
